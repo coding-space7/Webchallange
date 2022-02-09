@@ -24,6 +24,7 @@ hr{
   margin: auto;
   border-radius: 14px;
   padding: 10px;
+  box-shadow: 0 0 50px black;
   background-color: hsl(216, 50%, 16%);
 }
 .image-div {

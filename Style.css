@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+hr{
+    margin:20px 0;
+    background-color:hsl(215, 51%, 70%);
+}
+.main {
+  background-color: hsl(217, 54%, 11%);
+  height:100vh;/*620px*/
+  width: 100vw;
+}
+.main-card {
+  position: absolute;
+  width: 305px;
+  height: 530px;
+  inset: 0;
+  margin: auto;
+  border-radius: 14px;
+  padding: 10px;
+  background-color: hsl(216, 50%, 16%);
+}
+.image-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.equi-image {
+  opacity: 1;
+  width: 96.87%;
+  border-radius: 10px; 
+}
+.overlay{
+  position: absolute;
+  border-radius: 10px; 
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: cyan;
+}
+.image-div:hover .overlay {
+  opacity: 0.5;
+}
+.image-div:hover .eye-icon {
+  opacity: 1;
+}
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+.main-card-title {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.main-card-title span:hover {
+  color: cyan;
+}
+.main-card-content {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.main-card-ethandtime {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main-card-ethandtime-eth {
+  display: flex;
+  width: 100px;
+}
+.main-card-ethandtime-eth img {
+    float: left;
+    width: 14%;
+    margin-right: 10%;
+}
+.main-card-eth {
+  color: hsl(178, 100%, 50%);
+  font-size: 16px;
+  width: 80px;
+  font-weight: 600;
+  margin-top: 1px;
+}
+.main-card-ethandtime-time {
+  display: flex;
+  width: 110px;
+}
+.main-card-ethandtime-time img {
+  float: left;
+  width: 20%;
+  margin-right: 10%;
+}
+.main-card-time {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+  font-weight: 300;
+}
+.main-card-watermark{
+    display:flex;
+}
+.main-card-watermark img{
+    width: 30px;
+    border: 1px solid white; 
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.main-card-watermark span{
+    color: hsl(215, 51%, 70%);
+}
+.main-card-watermark p{
+    color: whitesmoke;
+    margin-top: 4px;
+    font-size: 16px;
+    height: 20px;
+}
+.main-card-watermark p:hover {
+  color: cyan;
+}
+
+footer {
+  width: 100vw;
+  background-color: #181d31;
+  color: whitesmoke;
+}
+footer a {
+  text-decoration: none;
+}
